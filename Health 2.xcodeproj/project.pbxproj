@@ -1,0 +1,1315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		303E025F3598A7E2E0996E01 /* Pods_Health_2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D250FE4D3E98A8C60DF840B1 /* Pods_Health_2Tests.framework */; };
+		8010CEB51E8090BD009E6F16 /* StressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8010CEB41E8090BD009E6F16 /* StressViewController.swift */; };
+		804910DA1E47F8AA00255994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804910D91E47F8AA00255994 /* AppDelegate.swift */; };
+		804910DC1E47F8AA00255994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804910DB1E47F8AA00255994 /* ViewController.swift */; };
+		804910DF1E47F8AA00255994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804910DD1E47F8AA00255994 /* Main.storyboard */; };
+		804910E11E47F8AA00255994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804910E01E47F8AA00255994 /* Assets.xcassets */; };
+		804910E41E47F8AA00255994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804910E21E47F8AA00255994 /* LaunchScreen.storyboard */; };
+		804910EF1E47F8AA00255994 /* Health_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804910EE1E47F8AA00255994 /* Health_2Tests.swift */; };
+		804910FA1E47F8AA00255994 /* Health_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804910F91E47F8AA00255994 /* Health_2UITests.swift */; };
+		804910FF1E47F8AA00255994 /* Health 2 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 804910FE1E47F8AA00255994 /* Health 2 WatchKit App.app */; };
+		804911051E47F8AA00255994 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804911031E47F8AA00255994 /* Interface.storyboard */; };
+		804911071E47F8AB00255994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804911061E47F8AB00255994 /* Assets.xcassets */; };
+		8049110E1E47F8AB00255994 /* Health 2 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8049110D1E47F8AB00255994 /* Health 2 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		804911151E47F8AB00255994 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804911141E47F8AB00255994 /* InterfaceController.swift */; };
+		804911171E47F8AB00255994 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804911161E47F8AB00255994 /* ExtensionDelegate.swift */; };
+		804911191E47F8AB00255994 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804911181E47F8AB00255994 /* NotificationController.swift */; };
+		8049111B1E47F8AB00255994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8049111A1E47F8AB00255994 /* Assets.xcassets */; };
+		804911331E47F8F600255994 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804911321E47F8F600255994 /* HealthKit.framework */; };
+		804911361E47F8FC00255994 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804911351E47F8FC00255994 /* HealthKit.framework */; };
+		80F38F121E95D97B00F2A994 /* utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F38F111E95D97A00F2A994 /* utility.swift */; };
+		80F641641E8A0F5500EBE026 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F641631E8A0F5500EBE026 /* SettingsViewController.swift */; };
+		80FF13261E849D8A00EB9610 /* AIToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF13211E849D7400EB9610 /* AIToolbox.framework */; };
+		80FF13271E849D8A00EB9610 /* AIToolbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF13211E849D7400EB9610 /* AIToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		80FF133E1E85896E00EB9610 /* StressLevelInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF133D1E85896E00EB9610 /* StressLevelInterfaceController.swift */; };
+		9515D0787ADCAC3D4D7B3D3D /* Pods_Health_2_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F89BE5A5D9FFBAF58EA1D68 /* Pods_Health_2_WatchKit_App.framework */; };
+		BE3EED9D01339DA276909A1C /* Pods_Health_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7B2B9B0AC15B9F05C17B1C /* Pods_Health_2.framework */; };
+		C74CD5C24730620B19AE414D /* Pods_Health_2_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8772ABA9146BAA3FF51A6D6 /* Pods_Health_2_WatchKit_Extension.framework */; };
+		D14AE9DCC3AA1624C4E67DFF /* Pods_Health_2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04E4E9F76C23F8DC01FDE4F /* Pods_Health_2UITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		804910EB1E47F8AA00255994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 804910CE1E47F8AA00255994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 804910D51E47F8AA00255994;
+			remoteInfo = "Health 2";
+		};
+		804910F61E47F8AA00255994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 804910CE1E47F8AA00255994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 804910D51E47F8AA00255994;
+			remoteInfo = "Health 2";
+		};
+		804911001E47F8AA00255994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 804910CE1E47F8AA00255994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 804910FD1E47F8AA00255994;
+			remoteInfo = "Health 2 WatchKit App";
+		};
+		8049110F1E47F8AB00255994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 804910CE1E47F8AA00255994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8049110C1E47F8AB00255994;
+			remoteInfo = "Health 2 WatchKit Extension";
+		};
+		80FF131C1E849D7400EB9610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80FF13141E849D7400EB9610 /* AIToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0EBA29AB1A91350C0012CEC9;
+			remoteInfo = AIToolbox;
+		};
+		80FF131E1E849D7400EB9610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80FF13141E849D7400EB9610 /* AIToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0EBA29B61A91350C0012CEC9;
+			remoteInfo = AIToolboxTests;
+		};
+		80FF13201E849D7400EB9610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80FF13141E849D7400EB9610 /* AIToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E0A4F931C133E8800AD5AAE;
+			remoteInfo = AIToolboxIOS;
+		};
+		80FF13221E849D7400EB9610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80FF13141E849D7400EB9610 /* AIToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E0A4F9C1C133E8800AD5AAE;
+			remoteInfo = AIToolboxIOSTests;
+		};
+		80FF13241E849D7400EB9610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80FF13141E849D7400EB9610 /* AIToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FB0D5A231CAF09230097590B;
+			remoteInfo = "AIToolbox copy";
+		};
+		80FF13281E849D8A00EB9610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80FF13141E849D7400EB9610 /* AIToolbox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E0A4F921C133E8800AD5AAE;
+			remoteInfo = AIToolboxIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		804911221E47F8AB00255994 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8049110E1E47F8AB00255994 /* Health 2 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804911261E47F8AB00255994 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				804910FF1E47F8AA00255994 /* Health 2 WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FF13121E84948500EB9610 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				80FF13271E849D8A00EB9610 /* AIToolbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19F85B0D59E5DC54C4B44CFC /* Pods-Health 2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health 2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health 2Tests/Pods-Health 2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		26133BCA76877EE5FA40CC43 /* Pods-Health 2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health 2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Health 2UITests/Pods-Health 2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2922561D1C7156DA5D391CD1 /* Pods-Health 2 WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health 2 WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Health 2 WatchKit Extension/Pods-Health 2 WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		47C691D1482A18061D8D863D /* Pods-Health 2 WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health 2 WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Health 2 WatchKit App/Pods-Health 2 WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		65AC4F5396E91544F1507B8D /* Pods-Health 2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health 2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health 2UITests/Pods-Health 2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D9BAF3CFA49ECEE90E3F253 /* Pods-Health 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health 2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Health 2/Pods-Health 2.debug.xcconfig"; sourceTree = "<group>"; };
+		7452BD585C14ECA86F6349B7 /* Pods-Health 2 WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health 2 WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health 2 WatchKit Extension/Pods-Health 2 WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		8010CEB41E8090BD009E6F16 /* StressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StressViewController.swift; sourceTree = "<group>"; };
+		804910D61E47F8AA00255994 /* Health 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Health 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804910D91E47F8AA00255994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		804910DB1E47F8AA00255994 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		804910DE1E47F8AA00255994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		804910E01E47F8AA00255994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		804910E31E47F8AA00255994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		804910E51E47F8AA00255994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		804910EA1E47F8AA00255994 /* Health 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Health 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804910EE1E47F8AA00255994 /* Health_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health_2Tests.swift; sourceTree = "<group>"; };
+		804910F01E47F8AA00255994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		804910F51E47F8AA00255994 /* Health 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Health 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804910F91E47F8AA00255994 /* Health_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health_2UITests.swift; sourceTree = "<group>"; };
+		804910FB1E47F8AA00255994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		804910FE1E47F8AA00255994 /* Health 2 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Health 2 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804911041E47F8AA00255994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		804911061E47F8AB00255994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		804911081E47F8AB00255994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8049110D1E47F8AB00255994 /* Health 2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Health 2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804911131E47F8AB00255994 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		804911141E47F8AB00255994 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		804911161E47F8AB00255994 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		804911181E47F8AB00255994 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8049111A1E47F8AB00255994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8049111C1E47F8AB00255994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		804911301E47F8F600255994 /* Health 2 WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Health 2 WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		804911321E47F8F600255994 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		804911341E47F8FB00255994 /* Health 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Health 2.entitlements"; sourceTree = "<group>"; };
+		804911351E47F8FC00255994 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		80C8F8421E7F9962007AE8FE /* Health 2 WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Health 2 WatchKit App.entitlements"; sourceTree = "<group>"; };
+		80F38F111E95D97A00F2A994 /* utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utility.swift; sourceTree = "<group>"; };
+		80F641631E8A0F5500EBE026 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		80FF13141E849D7400EB9610 /* AIToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AIToolbox.xcodeproj; path = ../../../../AIToolbox/AIToolbox.xcodeproj; sourceTree = "<group>"; };
+		80FF133D1E85896E00EB9610 /* StressLevelInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StressLevelInterfaceController.swift; sourceTree = "<group>"; };
+		9F89BE5A5D9FFBAF58EA1D68 /* Pods_Health_2_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health_2_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DFA14E4B4E91DC35FBCA28 /* Pods-Health 2 WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health 2 WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health 2 WatchKit App/Pods-Health 2 WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		AAA4CB5B875C33B67A10EDDA /* Pods-Health 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health 2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health 2/Pods-Health 2.release.xcconfig"; sourceTree = "<group>"; };
+		C8772ABA9146BAA3FF51A6D6 /* Pods_Health_2_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health_2_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04E4E9F76C23F8DC01FDE4F /* Pods_Health_2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health_2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D250FE4D3E98A8C60DF840B1 /* Pods_Health_2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health_2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7B2B9B0AC15B9F05C17B1C /* Pods_Health_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57F8850780D58BBF73AC645 /* Pods-Health 2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health 2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Health 2Tests/Pods-Health 2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43116D14A3990D062ADEDDC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9515D0787ADCAC3D4D7B3D3D /* Pods_Health_2_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804910D31E47F8AA00255994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804911361E47F8FC00255994 /* HealthKit.framework in Frameworks */,
+				80FF13261E849D8A00EB9610 /* AIToolbox.framework in Frameworks */,
+				BE3EED9D01339DA276909A1C /* Pods_Health_2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804910E71E47F8AA00255994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303E025F3598A7E2E0996E01 /* Pods_Health_2Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804910F21E47F8AA00255994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14AE9DCC3AA1624C4E67DFF /* Pods_Health_2UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8049110A1E47F8AB00255994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804911331E47F8F600255994 /* HealthKit.framework in Frameworks */,
+				C74CD5C24730620B19AE414D /* Pods_Health_2_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		804910CD1E47F8AA00255994 = {
+			isa = PBXGroup;
+			children = (
+				80FF13141E849D7400EB9610 /* AIToolbox.xcodeproj */,
+				804910D81E47F8AA00255994 /* Health 2 */,
+				804910ED1E47F8AA00255994 /* Health 2Tests */,
+				804910F81E47F8AA00255994 /* Health 2UITests */,
+				804911021E47F8AA00255994 /* Health 2 WatchKit App */,
+				804911111E47F8AB00255994 /* Health 2 WatchKit Extension */,
+				804910D71E47F8AA00255994 /* Products */,
+				804911311E47F8F600255994 /* Frameworks */,
+				8D14C4A48C7D3B2008EADA39 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		804910D71E47F8AA00255994 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				804910D61E47F8AA00255994 /* Health 2.app */,
+				804910EA1E47F8AA00255994 /* Health 2Tests.xctest */,
+				804910F51E47F8AA00255994 /* Health 2UITests.xctest */,
+				804910FE1E47F8AA00255994 /* Health 2 WatchKit App.app */,
+				8049110D1E47F8AB00255994 /* Health 2 WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		804910D81E47F8AA00255994 /* Health 2 */ = {
+			isa = PBXGroup;
+			children = (
+				804911341E47F8FB00255994 /* Health 2.entitlements */,
+				804910D91E47F8AA00255994 /* AppDelegate.swift */,
+				80F38F111E95D97A00F2A994 /* utility.swift */,
+				8010CEB41E8090BD009E6F16 /* StressViewController.swift */,
+				804910DB1E47F8AA00255994 /* ViewController.swift */,
+				804910DD1E47F8AA00255994 /* Main.storyboard */,
+				80F641631E8A0F5500EBE026 /* SettingsViewController.swift */,
+				804910E01E47F8AA00255994 /* Assets.xcassets */,
+				804910E21E47F8AA00255994 /* LaunchScreen.storyboard */,
+				804910E51E47F8AA00255994 /* Info.plist */,
+			);
+			path = "Health 2";
+			sourceTree = "<group>";
+		};
+		804910ED1E47F8AA00255994 /* Health 2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				804910EE1E47F8AA00255994 /* Health_2Tests.swift */,
+				804910F01E47F8AA00255994 /* Info.plist */,
+			);
+			path = "Health 2Tests";
+			sourceTree = "<group>";
+		};
+		804910F81E47F8AA00255994 /* Health 2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				804910F91E47F8AA00255994 /* Health_2UITests.swift */,
+				804910FB1E47F8AA00255994 /* Info.plist */,
+			);
+			path = "Health 2UITests";
+			sourceTree = "<group>";
+		};
+		804911021E47F8AA00255994 /* Health 2 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				80C8F8421E7F9962007AE8FE /* Health 2 WatchKit App.entitlements */,
+				804911031E47F8AA00255994 /* Interface.storyboard */,
+				804911061E47F8AB00255994 /* Assets.xcassets */,
+				804911081E47F8AB00255994 /* Info.plist */,
+			);
+			path = "Health 2 WatchKit App";
+			sourceTree = "<group>";
+		};
+		804911111E47F8AB00255994 /* Health 2 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				804911301E47F8F600255994 /* Health 2 WatchKit Extension.entitlements */,
+				804911141E47F8AB00255994 /* InterfaceController.swift */,
+				80FF133D1E85896E00EB9610 /* StressLevelInterfaceController.swift */,
+				804911161E47F8AB00255994 /* ExtensionDelegate.swift */,
+				804911181E47F8AB00255994 /* NotificationController.swift */,
+				8049111A1E47F8AB00255994 /* Assets.xcassets */,
+				8049111C1E47F8AB00255994 /* Info.plist */,
+				804911121E47F8AB00255994 /* Supporting Files */,
+			);
+			path = "Health 2 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		804911121E47F8AB00255994 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				804911131E47F8AB00255994 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		804911311E47F8F600255994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				804911351E47F8FC00255994 /* HealthKit.framework */,
+				804911321E47F8F600255994 /* HealthKit.framework */,
+				EB7B2B9B0AC15B9F05C17B1C /* Pods_Health_2.framework */,
+				9F89BE5A5D9FFBAF58EA1D68 /* Pods_Health_2_WatchKit_App.framework */,
+				C8772ABA9146BAA3FF51A6D6 /* Pods_Health_2_WatchKit_Extension.framework */,
+				D250FE4D3E98A8C60DF840B1 /* Pods_Health_2Tests.framework */,
+				D04E4E9F76C23F8DC01FDE4F /* Pods_Health_2UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80FF13151E849D7400EB9610 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80FF131D1E849D7400EB9610 /* AIToolbox.framework */,
+				80FF131F1E849D7400EB9610 /* AIToolboxTests.xctest */,
+				80FF13211E849D7400EB9610 /* AIToolbox.framework */,
+				80FF13231E849D7400EB9610 /* AIToolboxIOSTests.xctest */,
+				80FF13251E849D7400EB9610 /* AIToolbox copy.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D14C4A48C7D3B2008EADA39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D9BAF3CFA49ECEE90E3F253 /* Pods-Health 2.debug.xcconfig */,
+				AAA4CB5B875C33B67A10EDDA /* Pods-Health 2.release.xcconfig */,
+				47C691D1482A18061D8D863D /* Pods-Health 2 WatchKit App.debug.xcconfig */,
+				A1DFA14E4B4E91DC35FBCA28 /* Pods-Health 2 WatchKit App.release.xcconfig */,
+				2922561D1C7156DA5D391CD1 /* Pods-Health 2 WatchKit Extension.debug.xcconfig */,
+				7452BD585C14ECA86F6349B7 /* Pods-Health 2 WatchKit Extension.release.xcconfig */,
+				F57F8850780D58BBF73AC645 /* Pods-Health 2Tests.debug.xcconfig */,
+				19F85B0D59E5DC54C4B44CFC /* Pods-Health 2Tests.release.xcconfig */,
+				26133BCA76877EE5FA40CC43 /* Pods-Health 2UITests.debug.xcconfig */,
+				65AC4F5396E91544F1507B8D /* Pods-Health 2UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		804910D51E47F8AA00255994 /* Health 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804911271E47F8AB00255994 /* Build configuration list for PBXNativeTarget "Health 2" */;
+			buildPhases = (
+				10202FFFD53E41718BE3FEBC /* [CP] Check Pods Manifest.lock */,
+				804910D21E47F8AA00255994 /* Sources */,
+				804910D31E47F8AA00255994 /* Frameworks */,
+				804910D41E47F8AA00255994 /* Resources */,
+				804911261E47F8AB00255994 /* Embed Watch Content */,
+				0F8F8697F2ACD8A2CCF16FC8 /* [CP] Embed Pods Frameworks */,
+				581C6244042F20F77C00F153 /* [CP] Copy Pods Resources */,
+				80FF13121E84948500EB9610 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				804911011E47F8AA00255994 /* PBXTargetDependency */,
+				80FF13291E849D8A00EB9610 /* PBXTargetDependency */,
+			);
+			name = "Health 2";
+			productName = "Health 2";
+			productReference = 804910D61E47F8AA00255994 /* Health 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		804910E91E47F8AA00255994 /* Health 2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8049112A1E47F8AB00255994 /* Build configuration list for PBXNativeTarget "Health 2Tests" */;
+			buildPhases = (
+				9AF356EBB1B8DEDC7532DEFB /* [CP] Check Pods Manifest.lock */,
+				804910E61E47F8AA00255994 /* Sources */,
+				804910E71E47F8AA00255994 /* Frameworks */,
+				804910E81E47F8AA00255994 /* Resources */,
+				5701DF7A8C57FD858EE3BA70 /* [CP] Embed Pods Frameworks */,
+				BF2217155AF89615B9B39CC3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				804910EC1E47F8AA00255994 /* PBXTargetDependency */,
+			);
+			name = "Health 2Tests";
+			productName = "Health 2Tests";
+			productReference = 804910EA1E47F8AA00255994 /* Health 2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		804910F41E47F8AA00255994 /* Health 2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8049112D1E47F8AB00255994 /* Build configuration list for PBXNativeTarget "Health 2UITests" */;
+			buildPhases = (
+				3C3F0A865BFE6AE9FE925352 /* [CP] Check Pods Manifest.lock */,
+				804910F11E47F8AA00255994 /* Sources */,
+				804910F21E47F8AA00255994 /* Frameworks */,
+				804910F31E47F8AA00255994 /* Resources */,
+				B5BA4A4907675837C8D12DC5 /* [CP] Embed Pods Frameworks */,
+				A02C30DB08D25D3DAAE193AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				804910F71E47F8AA00255994 /* PBXTargetDependency */,
+			);
+			name = "Health 2UITests";
+			productName = "Health 2UITests";
+			productReference = 804910F51E47F8AA00255994 /* Health 2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		804910FD1E47F8AA00255994 /* Health 2 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804911231E47F8AB00255994 /* Build configuration list for PBXNativeTarget "Health 2 WatchKit App" */;
+			buildPhases = (
+				87F9025CE80CE6EFA308931A /* [CP] Check Pods Manifest.lock */,
+				804910FC1E47F8AA00255994 /* Resources */,
+				804911221E47F8AB00255994 /* Embed App Extensions */,
+				43116D14A3990D062ADEDDC3 /* Frameworks */,
+				EBC51113C46DF0C428BB4B20 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				804911101E47F8AB00255994 /* PBXTargetDependency */,
+			);
+			name = "Health 2 WatchKit App";
+			productName = "Health 2 WatchKit App";
+			productReference = 804910FE1E47F8AA00255994 /* Health 2 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8049110C1E47F8AB00255994 /* Health 2 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8049111F1E47F8AB00255994 /* Build configuration list for PBXNativeTarget "Health 2 WatchKit Extension" */;
+			buildPhases = (
+				8D39E54E841C47F323726AE1 /* [CP] Check Pods Manifest.lock */,
+				804911091E47F8AB00255994 /* Sources */,
+				8049110A1E47F8AB00255994 /* Frameworks */,
+				8049110B1E47F8AB00255994 /* Resources */,
+				B377DEDD99B5E1D1F2631A7E /* [CP] Embed Pods Frameworks */,
+				E8FB8DEDDDEA75BEBFEC6EE8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Health 2 WatchKit Extension";
+			productName = "Health 2 WatchKit Extension";
+			productReference = 8049110D1E47F8AB00255994 /* Health 2 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		804910CE1E47F8AA00255994 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jason La";
+				TargetAttributes = {
+					804910D51E47F8AA00255994 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3C88TTWHMV;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					804910E91E47F8AA00255994 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3C88TTWHMV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 804910D51E47F8AA00255994;
+					};
+					804910F41E47F8AA00255994 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3C88TTWHMV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 804910D51E47F8AA00255994;
+					};
+					804910FD1E47F8AA00255994 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3C88TTWHMV;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					8049110C1E47F8AB00255994 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3C88TTWHMV;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 804910D11E47F8AA00255994 /* Build configuration list for PBXProject "Health 2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 804910CD1E47F8AA00255994;
+			productRefGroup = 804910D71E47F8AA00255994 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 80FF13151E849D7400EB9610 /* Products */;
+					ProjectRef = 80FF13141E849D7400EB9610 /* AIToolbox.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				804910D51E47F8AA00255994 /* Health 2 */,
+				804910E91E47F8AA00255994 /* Health 2Tests */,
+				804910F41E47F8AA00255994 /* Health 2UITests */,
+				804910FD1E47F8AA00255994 /* Health 2 WatchKit App */,
+				8049110C1E47F8AB00255994 /* Health 2 WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		80FF131D1E849D7400EB9610 /* AIToolbox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AIToolbox.framework;
+			remoteRef = 80FF131C1E849D7400EB9610 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80FF131F1E849D7400EB9610 /* AIToolboxTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AIToolboxTests.xctest;
+			remoteRef = 80FF131E1E849D7400EB9610 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80FF13211E849D7400EB9610 /* AIToolbox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AIToolbox.framework;
+			remoteRef = 80FF13201E849D7400EB9610 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80FF13231E849D7400EB9610 /* AIToolboxIOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AIToolboxIOSTests.xctest;
+			remoteRef = 80FF13221E849D7400EB9610 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80FF13251E849D7400EB9610 /* AIToolbox copy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "AIToolbox copy.framework";
+			remoteRef = 80FF13241E849D7400EB9610 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		804910D41E47F8AA00255994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804910E41E47F8AA00255994 /* LaunchScreen.storyboard in Resources */,
+				804910E11E47F8AA00255994 /* Assets.xcassets in Resources */,
+				804910DF1E47F8AA00255994 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804910E81E47F8AA00255994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804910F31E47F8AA00255994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804910FC1E47F8AA00255994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804911071E47F8AB00255994 /* Assets.xcassets in Resources */,
+				804911051E47F8AA00255994 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8049110B1E47F8AB00255994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8049111B1E47F8AB00255994 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F8F8697F2ACD8A2CCF16FC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Health 2/Pods-Health 2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10202FFFD53E41718BE3FEBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C3F0A865BFE6AE9FE925352 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5701DF7A8C57FD858EE3BA70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Health 2Tests/Pods-Health 2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		581C6244042F20F77C00F153 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Health 2/Pods-Health 2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87F9025CE80CE6EFA308931A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D39E54E841C47F323726AE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF356EBB1B8DEDC7532DEFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A02C30DB08D25D3DAAE193AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Health 2UITests/Pods-Health 2UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B377DEDD99B5E1D1F2631A7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Health 2 WatchKit Extension/Pods-Health 2 WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5BA4A4907675837C8D12DC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Health 2UITests/Pods-Health 2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF2217155AF89615B9B39CC3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Health 2Tests/Pods-Health 2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8FB8DEDDDEA75BEBFEC6EE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Health 2 WatchKit Extension/Pods-Health 2 WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBC51113C46DF0C428BB4B20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Health 2 WatchKit App/Pods-Health 2 WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		804910D21E47F8AA00255994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804910DC1E47F8AA00255994 /* ViewController.swift in Sources */,
+				80F38F121E95D97B00F2A994 /* utility.swift in Sources */,
+				8010CEB51E8090BD009E6F16 /* StressViewController.swift in Sources */,
+				804910DA1E47F8AA00255994 /* AppDelegate.swift in Sources */,
+				80F641641E8A0F5500EBE026 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804910E61E47F8AA00255994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804910EF1E47F8AA00255994 /* Health_2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804910F11E47F8AA00255994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804910FA1E47F8AA00255994 /* Health_2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804911091E47F8AB00255994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FF133E1E85896E00EB9610 /* StressLevelInterfaceController.swift in Sources */,
+				804911191E47F8AB00255994 /* NotificationController.swift in Sources */,
+				804911171E47F8AB00255994 /* ExtensionDelegate.swift in Sources */,
+				804911151E47F8AB00255994 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		804910EC1E47F8AA00255994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 804910D51E47F8AA00255994 /* Health 2 */;
+			targetProxy = 804910EB1E47F8AA00255994 /* PBXContainerItemProxy */;
+		};
+		804910F71E47F8AA00255994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 804910D51E47F8AA00255994 /* Health 2 */;
+			targetProxy = 804910F61E47F8AA00255994 /* PBXContainerItemProxy */;
+		};
+		804911011E47F8AA00255994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 804910FD1E47F8AA00255994 /* Health 2 WatchKit App */;
+			targetProxy = 804911001E47F8AA00255994 /* PBXContainerItemProxy */;
+		};
+		804911101E47F8AB00255994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8049110C1E47F8AB00255994 /* Health 2 WatchKit Extension */;
+			targetProxy = 8049110F1E47F8AB00255994 /* PBXContainerItemProxy */;
+		};
+		80FF13291E849D8A00EB9610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AIToolboxIOS;
+			targetProxy = 80FF13281E849D8A00EB9610 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		804910DD1E47F8AA00255994 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804910DE1E47F8AA00255994 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		804910E21E47F8AA00255994 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804910E31E47F8AA00255994 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		804911031E47F8AA00255994 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804911041E47F8AA00255994 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8049111D1E47F8AB00255994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8049111E1E47F8AB00255994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		804911201E47F8AB00255994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2922561D1C7156DA5D391CD1 /* Pods-Health 2 WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Health 2 WatchKit Extension/Health 2 WatchKit Extension.entitlements";
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				INFOPLIST_FILE = "Health 2 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasonla.Health-2.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		804911211E47F8AB00255994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7452BD585C14ECA86F6349B7 /* Pods-Health 2 WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Health 2 WatchKit Extension/Health 2 WatchKit Extension.entitlements";
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				INFOPLIST_FILE = "Health 2 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasonla.Health-2.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		804911241E47F8AB00255994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47C691D1482A18061D8D863D /* Pods-Health 2 WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Health 2 WatchKit App/Health 2 WatchKit App.entitlements";
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				IBSC_MODULE = Health_2_WatchKit_Extension;
+				INFOPLIST_FILE = "Health 2 WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasonla.Health-2.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		804911251E47F8AB00255994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1DFA14E4B4E91DC35FBCA28 /* Pods-Health 2 WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Health 2 WatchKit App/Health 2 WatchKit App.entitlements";
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				IBSC_MODULE = Health_2_WatchKit_Extension;
+				INFOPLIST_FILE = "Health 2 WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasonla.Health-2.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		804911281E47F8AB00255994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D9BAF3CFA49ECEE90E3F253 /* Pods-Health 2.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Health 2/Health 2.entitlements";
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Health 2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasonla.Health-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		804911291E47F8AB00255994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA4CB5B875C33B67A10EDDA /* Pods-Health 2.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Health 2/Health 2.entitlements";
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Health 2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasonla.Health-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8049112B1E47F8AB00255994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F57F8850780D58BBF73AC645 /* Pods-Health 2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				INFOPLIST_FILE = "Health 2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasonla.Health-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Health 2.app/Health 2";
+			};
+			name = Debug;
+		};
+		8049112C1E47F8AB00255994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19F85B0D59E5DC54C4B44CFC /* Pods-Health 2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				INFOPLIST_FILE = "Health 2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasonla.Health-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Health 2.app/Health 2";
+			};
+			name = Release;
+		};
+		8049112E1E47F8AB00255994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26133BCA76877EE5FA40CC43 /* Pods-Health 2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				INFOPLIST_FILE = "Health 2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasonla.Health-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Health 2";
+			};
+			name = Debug;
+		};
+		8049112F1E47F8AB00255994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AC4F5396E91544F1507B8D /* Pods-Health 2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				INFOPLIST_FILE = "Health 2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasonla.Health-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Health 2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		804910D11E47F8AA00255994 /* Build configuration list for PBXProject "Health 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8049111D1E47F8AB00255994 /* Debug */,
+				8049111E1E47F8AB00255994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8049111F1E47F8AB00255994 /* Build configuration list for PBXNativeTarget "Health 2 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804911201E47F8AB00255994 /* Debug */,
+				804911211E47F8AB00255994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804911231E47F8AB00255994 /* Build configuration list for PBXNativeTarget "Health 2 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804911241E47F8AB00255994 /* Debug */,
+				804911251E47F8AB00255994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804911271E47F8AB00255994 /* Build configuration list for PBXNativeTarget "Health 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804911281E47F8AB00255994 /* Debug */,
+				804911291E47F8AB00255994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8049112A1E47F8AB00255994 /* Build configuration list for PBXNativeTarget "Health 2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8049112B1E47F8AB00255994 /* Debug */,
+				8049112C1E47F8AB00255994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8049112D1E47F8AB00255994 /* Build configuration list for PBXNativeTarget "Health 2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8049112E1E47F8AB00255994 /* Debug */,
+				8049112F1E47F8AB00255994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 804910CE1E47F8AA00255994 /* Project object */;
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Health_2_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="136" height="150" alignment="left" layout="vertical" id="xTc-fu-sIU">
+                            <items>
+                                <group width="115" height="100" alignment="center" layout="vertical" id="v8d-9a-qj8">
+                                    <items>
+                                        <label width="85" height="30" alignment="center" verticalAlignment="center" text="Hi" textAlignment="center" id="x0x-tb-uje">
+                                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="20"/>
+                                        </label>
+                                        <label width="110" alignment="center" verticalAlignment="center" text="Bit Stressed" textAlignment="center" id="Jgd-Qe-E37">
+                                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                        </label>
+                                        <label alignment="center" verticalAlignment="center" text="Sampling..." textAlignment="center" id="Ajz-jy-2yB">
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="136" height="40" alignment="center" verticalAlignment="bottom" id="miI-e8-hdk">
+                                    <items>
+                                        <button width="63" height="35" alignment="left" verticalAlignment="center" title="Test" id="Mxi-oq-w5P">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                            <connections>
+                                                <action selector="onButtonPressed" destination="AgC-eL-Hgc" id="zXh-9j-SJY"/>
+                                            </connections>
+                                        </button>
+                                        <group width="4" height="100" alignment="center" verticalAlignment="center" id="2D9-4i-F4Y"/>
+                                        <button width="63" height="35" alignment="right" verticalAlignment="center" title="Sample" id="bl3-lF-Opr">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                            <connections>
+                                                <action selector="stressOn" destination="AgC-eL-Hgc" id="43E-jh-xNW"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="SWJ-V2-xru">
+                            <items>
+                                <label width="129" height="25" alignment="center" text="How do you feel?" textAlignment="center" id="3Nz-Vf-3gm"/>
+                                <picker height="75" alignment="center" verticalAlignment="center" id="5Ih-uQ-aw4">
+                                    <connections>
+                                        <action selector="pickerChanged:" destination="AgC-eL-Hgc" id="HaI-Do-ATW"/>
+                                    </connections>
+                                </picker>
+                                <button width="1" alignment="left" verticalAlignment="bottom" title="Done" id="bXD-xL-YD5">
+                                    <connections>
+                                        <action selector="donePressed" destination="AgC-eL-Hgc" id="Ush-LN-zCi"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="breatheLabel" destination="x0x-tb-uje" id="xO8-aj-anx"/>
+                        <outlet property="homeGroup" destination="xTc-fu-sIU" id="i1C-L9-IOH"/>
+                        <outlet property="onButton" destination="Mxi-oq-w5P" id="hCX-AL-oH8"/>
+                        <outlet property="statusLabel" destination="Ajz-jy-2yB" id="f0p-OQ-t6u"/>
+                        <outlet property="stressCheckinGroup" destination="SWJ-V2-xru" id="YHc-yD-4lP"/>
+                        <outlet property="stressIndicator" destination="v8d-9a-qj8" id="8vw-Mv-m5f"/>
+                        <outlet property="stressLevelLabel" destination="Jgd-Qe-E37" id="XUw-TO-Ggz"/>
+                        <outlet property="stressLevelPicker" destination="5Ih-uQ-aw4" id="y1H-fr-LA2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="222" y="267"/>
+        </scene>
+        <!--Stress Level Interface Controller-->
+        <scene sceneID="UHJ-BA-LG0">
+            <objects>
+                <controller id="51H-7O-toK" customClass="StressLevelInterfaceController" customModule="Health_2_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="H8o-Yb-ozD">
+                            <items>
+                                <label width="129" height="25" alignment="center" text="How do you feel?" textAlignment="center" id="N3T-BR-M9A"/>
+                                <picker height="75" alignment="center" verticalAlignment="center" id="uC5-cv-BtD">
+                                    <connections>
+                                        <action selector="pickerChanged:" destination="51H-7O-toK" id="j6T-sb-Ft0"/>
+                                    </connections>
+                                </picker>
+                                <button width="1" alignment="left" verticalAlignment="bottom" title="Done" id="WbT-yG-vwp">
+                                    <connections>
+                                        <action selector="donePressed" destination="51H-7O-toK" id="vxa-O9-Pk6"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="stressLevelPicker" destination="uC5-cv-BtD" id="JiG-l7-UW3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="538" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label width="136" height="50" alignment="center" text="Tap to record stress level." textAlignment="center" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="stressCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="FDd-Xe-cdi"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="124" y="656"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Health_2_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="132" height="49" alignment="center" text="Tap to record stress level." textAlignment="center" numberOfLines="0" id="J0u-3t-Gf6"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="423" y="673"/>
+        </scene>
+    </scenes>
+</document>
